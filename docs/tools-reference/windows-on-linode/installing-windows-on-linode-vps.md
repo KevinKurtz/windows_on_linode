@@ -224,11 +224,9 @@ Now that we've got Windows running on our VPS we need to fill the availble disk 
         
 	The VPS will shutdown and close your RDP session automatically.
 
-3. Once that's all done it's time to reboot into rescue mode again, we're going to use Finnix to resize the Windows partition.  Once it boots up, bring up the Glish console.
+3. Once that's all done it's time to reboot into rescue mode again, we're going to use Finnix to resize the Windows partition.  Once it boots up, bring up the lish console.
 	
     ![Back into rescue mode.](images/lin6.jpg)
-	
-    Then on the Remote Access tab...
 	
     ![Confirming the drive to edit.](images/lin7.jpg)
 
