@@ -109,21 +109,21 @@ In the last step we prepared a Windows system to send over the wire to a VPS, bu
 
 1. Create a new Linode VPS, the smallest Linode VPS will work so pick whatever size you'd like. 
 
-2. Once the VM is created, we're going to make a single disk using the settings below.  The size should be the largest possible allowed, filling all available disk space for this VPS.
+2. Once the VM is created, we're going to make a single disk using the settings below (under storage tab).  The size should be the largest possible allowed, filling all available disk space for this VPS. Delete the disks that come with it and add a new one.
 
 	![VPS Disk Settings.](images/lin2.jpg)
 
-3. Now we need a Configuration Profile that will boot Windows.  The settings below get it done.
+3. Now we need a Configuration Profile that will boot Windows (under configuration tab).  The settings below get it done.
 
 	![Configuratio Manager part 1.](images/lin4.jpg)
 	...
 	![Configuration Manager part 2.](images/lin5.jpg)
 
-4. Next we boot the VPS into Rescue Mode and access it via the Glish interface.
+4. Next we boot the VPS into Rescue Mode and access it via the Lish interface.
 
 	![Booting into resuce mode.](images/lin6.jpg)
     
-	The Glish option is under the "Remote Access" tab.
+	The Lish option is at the top.
     
 	![Getting Glish up for us.](images/lin7.jpg)
 
