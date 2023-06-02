@@ -146,7 +146,7 @@ We're going back to the local Windows Virtual Machine.  We need to boot it up wi
 
 	![Selecting the Finnix ISO.](images/vm13.jpg)
 
-2. Bootup Finnix and select the 64-bit boot option.
+2. Bootup Finnix and select the 64-bit boot option (will default to this and boot. Wait a few seconds).
 
 	![Finnix boot screen.](images/vm14.jpg)
 	
