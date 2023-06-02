@@ -32,9 +32,9 @@ To complete the guide you'll need these resources:
 
 2. Download a copy of a [Finnix](http://www.finnix.org/Download) Linux.
 
-3. Download a copy of [VirtualBox](https://www.virtualbox.org/wiki/Downloads) for the host OS you're using.
+3. Download a copy of [VirtualBox](https://www.virtualbox.org/wiki/Downloads) for the host OS you're using. USE VIRTUAL BOX NOT VMWARE OR SOMETHING ELSE. VMware uses an NVME drive instead of SATA and your linode will not boot because the EFI will be a mess. Use virtualbox.
 
-4. An authentic copy of Windows.  I’ve tested this process back to Windows 7/Windows Server 2012 but we’ll be using a [Windows 10 trial](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise) for this guide.
+4. An authentic copy of Windows.  I've used Windows 11 and it works.
 
 5. An active Linode VPS.
 
@@ -67,7 +67,7 @@ The first step of the process is to make a Windows based virtual machine that is
 
 	![Naming your virtual machine.](images/vm1.jpg)
 
-3. 2GB of ram is fine, this just needs to be enough to run the VM on your local machine. 
+3. 4GB of ram is fine, this just needs to be enough to run the VM on your local machine. 
 
 	![Setting the ram.](images/vm2.jpg)
 
@@ -83,7 +83,7 @@ The first step of the process is to make a Windows based virtual machine that is
 
 	{: .caution}
 	> * Install Windows on a single partition that fills the hard drive (basically the default settings).
-	> * Don't install any programs or add files to the system at this point!  We need it to be as light on disk space as possible.
+	> * Don't install any programs or add files to the system at this point!  We need it to be as light on disk space as possible. You can shrink the page file, remove the hibernation file, and also the system reserved file if you are so inclined. Google the powershell commands. This will save about 8GB.
 	> * If possible, don't yet activate Windows.  Wait until after Windows is installed on the Linode VPS to activate it.  The change in hardware will likely force the need for a second activation if you do it now.
 	> * Don't install the VirtualBox Guest additions, they'll just get in your way and needlessly fluff up the system.
 
