@@ -2,19 +2,18 @@
 author:
   name: Scott Lott
   email: scott@clicksimply.com
-description: 'Run Windows 7/Windows Server 2012 or newer on Servers.'
-keywords: 'windows, windows server, windows 10, windows 8, windows 7, windows server 2012, windows server 2012 R2, windows 8.1, kvm'
+description: 'Run Windows 11/Windows Server or newer Servers on Linode/Akamai'
+keywords: 'windows, windows server, windows 11, windows 10, windows 8, windows 7, windows server 2012, windows server 2012 R2, windows 8.1, kvm'
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 published: 'Friday, June 24th, 2016'
-modified: Friday, June 24th, 2016
+modified: Friday, June 2nd, 2023
 modified_by:
-  name:  Scott Lott
+  name:  Kevin Kurtz
+  link: kevinckurtz.com
 title: 'Windows on Linode'
 contributor:
   name: Scott Lott
-  link: Website
-  external_resources:(replace /dev/sda2(replace /dev/sda2
-- '[ClickSimply.com](http://clicksimply.com)'
+  link: clicksimply.com
 ---
 
 *This is a Linode Community guide. Write for us and earn $250 per published guide.*
