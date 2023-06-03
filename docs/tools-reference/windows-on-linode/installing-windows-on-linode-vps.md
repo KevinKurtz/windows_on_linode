@@ -31,7 +31,7 @@ To complete the guide you'll need these resources:
 
 2. Download a copy of a [Finnix](http://www.finnix.org/Download) Linux.
 
-3. Download a copy of [VirtualBox](https://www.virtualbox.org/wiki/Downloads) for the host OS you're using. USE VIRTUAL BOX NOT VMWARE OR SOMETHING ELSE. VMware uses an NVME drive instead of SATA and your linode will not boot because the EFI will be a mess. Use virtualbox.
+3. Download a copy of [VirtualBox](https://www.virtualbox.org/wiki/Downloads) for the host OS you're using. USE VIRTUAL BOX NOT VMWARE OR SOMETHING ELSE. VMware uses an NVME drive instead of SATA and your linode will not boot because the EFI will be a mess. Use virtualbox and disable EFI!
 
 4. An authentic copy of Windows.  I've used Windows 11 and it works.
 
@@ -66,7 +66,7 @@ The first step of the process is to make a Windows based virtual machine that is
 
 	![Naming your virtual machine.](images/vm1.jpg)
 
-3. 4GB of ram is fine, this just needs to be enough to run the VM on your local machine. 
+3. MAKE SURE YOU UNCHECK "Enable EFI"!!!!!! 4GB of ram is fine, this just needs to be enough to run the VM on your local machine. 
 
 	![Setting the ram.](images/vm2.jpg)
 
