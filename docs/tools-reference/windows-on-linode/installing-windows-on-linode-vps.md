@@ -6,10 +6,11 @@ description: 'Run Windows 11/Windows Server or newer Servers on Linode/Akamai'
 keywords: 'windows, windows server, windows 11, windows 10, windows 8, windows 7, windows server 2012, windows server 2012 R2, windows 8.1, kvm'
 license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 published: 'Friday, June 24th, 2016'
-modified: Friday, June 2nd, 2023
+modified: 'Friday, June 2nd, 2023'
 modified_by:
   name:  Kevin Kurtz
-  link: kevinckurtz.com
+  email: kevin@kevinckurtz.com
+  updates: Changed to windows 11 security specifics and updated the linode console information. Updated article for 2023.
 title: 'Windows on Linode'
 contributor:
   name: Scott Lott
@@ -154,7 +155,7 @@ We're going back to the local Windows Virtual Machine.  We need to boot it up wi
 	
     ![Finnix command line.](images/vm15.jpg)
 
-3. Alright, we're ready to do the transfer with the following command:
+3. Alright, we're ready to do the transfer with the following command: (NOTE: you can use gzip -1. The internet was slow in 2016 when this was written. Now the data upload is probably faster than the zipping time. Use your judgement. I used 1 because it was 10x faster to just upload nearly raw data than it was to use the CPU inside the VM to zip it.)
 
 		dd if=/dev/sda | pv | gzip -9 | ssh root@LinodeIP "gzip -d | dd of=/dev/sda"
         
